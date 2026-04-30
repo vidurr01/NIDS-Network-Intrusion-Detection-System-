@@ -82,7 +82,7 @@ NIDS-Network-Intrusion-Detection-System/
 
 This project uses the **CIC-IDS-2017** dataset by the Canadian Institute for Cybersecurity.
 
-🔗 **Download from Kaggle:** [https://www.kaggle.com/datasets/cicdataset/cicids2017](https://www.kaggle.com/datasets/cicdataset/cicids2017)
+🔗 **Download from Kaggle:** [https://www.kaggle.com/datasets/cicdataset/cicids2017]([https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset])
 
 After downloading, place the CSV files at `data/CIC-IDS-2017/` in the project root:
 
