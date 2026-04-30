@@ -1,0 +1,26 @@
+# ── Core API ──────────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.8.2
+
+# ── Data / ML ─────────────────────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1          # IsolationForest + LabelEncoder
+# FIX: Pinned to 1.7.6 to match the Data Team notebook training environment.
+# The notebook cell 0 installs xgboost==1.7.6; models saved with 1.7.6 may
+# not load cleanly under 2.x (API changes, removed use_label_encoder param).
+# Align both environments before upgrading.
+xgboost==1.7.6
+shap==0.45.1                 # Week 3: optional SHAP explanations
+joblib==1.4.2                # FIX: added — predictor.py now uses joblib.load()
+                             # (notebook exports models with joblib.dump())
+
+# ── Networking / capture ──────────────────────────────────────────────────────
+scapy==2.5.0                 # Week 2: live packet capture (requires root / CAP_NET_RAW)
+
+# ── HTTP client (alerting webhook + tests) ────────────────────────────────────
+httpx==0.27.2
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.2
